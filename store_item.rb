@@ -54,3 +54,35 @@ produce1 = Produce.new("apples", "red", 1.99)
 produce2 = Produce.new("spinach", "green", 3.55)
 produce3 = Produce.new("mangos", "orange", 2.37)
 produce1.store_info
+
+
+
+class Produce
+  attr_reader :name, :color, :price
+  attr_writer :name, :color, :price 
+
+  def initialize(name, color, price)
+    @name = name
+    @color = color
+    @price = price
+  end
+
+  def store_info
+    puts "My produce store sells #{@color} #{@name} for the price of $#{@price}."
+  end
+
+  def member_discount
+    @price = 0.75 * @price
+  end
+end
+
+produce1 = Produce.new("apples", "red", 1.99)
+produce2 = Produce.new("spinach", "green", 3.55)
+produce3 = Produce.new("mangos", "orange", 2.37)
+puts produce1.name
+puts produce2.price
+produce1.name = "cherries"
+puts produce1.name
+produce2.member_discount
+puts produce2.price
+puts produce2.store_info
