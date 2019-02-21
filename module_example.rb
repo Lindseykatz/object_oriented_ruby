@@ -1,6 +1,3 @@
-
-
-
 module VehicleMethods
   attr_reader :speed, :direction
 
