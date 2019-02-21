@@ -1,49 +1,3 @@
-# class Car
-#   def initialize
-#     @speed = 0
-#     @direction = 'north'
-#   end
-
-#   def brake
-#     @speed = 0
-#   end
-
-#   def accelerate
-#     @speed += 10
-#   end
-
-#   def turn(new_direction)
-#     @direction = new_direction
-#   end
-
-#   def honk_horn
-#     puts "Beeeeeeep!"
-#   end
-# end
-
-# class Bike
-#   def initialize
-#     @speed = 0
-#     @direction = 'north'
-#   end
-
-#   def brake
-#     @speed = 0
-#   end
-
-#   def accelerate
-#     @speed += 10
-#   end
-
-#   def turn(new_direction)
-#     @direction = new_direction
-#   end
-
-#   def ring_bell
-#     puts "Ring ring!"
-#   end
-# end
-
 class Vehicle
 
   attr_reader :speed, :direction
@@ -117,5 +71,3 @@ puts car.speed
 car.brake
 puts car.speed
 puts car.make
-
-# Add car specific attributes (instance variables) to the Car class (fuel, make, model, etc.) and bicycle specific attributes to the Bicycle class (type, weight, etc.). Use the super method to keep the initialize methods DRY.
